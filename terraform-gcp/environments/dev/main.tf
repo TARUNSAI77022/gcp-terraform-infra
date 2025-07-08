@@ -13,5 +13,5 @@ module "compute" {
   zone          = var.zone
   image         = "ubuntu-os-cloud/ubuntu-minimal-2404-lts-amd64"
   network       = module.network.network_self_link
-  subnetwork    = module.network.subnet_self_link 
+  subnetwork    = module.network.subnet_self_link
 }
