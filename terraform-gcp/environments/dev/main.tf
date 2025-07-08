@@ -11,7 +11,7 @@ module "compute" {
   name          = "testdev"
   machine_type  = "e2-standard-4"
   zone          = var.zone
-  image = "ubuntu-os-cloud/ubuntu-minimal-2404-lts"
+  image         = "ubuntu-os-cloud/ubuntu-minimal-2404-lts-amd64"
   network       = module.network.network_self_link
   subnetwork    = module.network.network_self_link
 }
