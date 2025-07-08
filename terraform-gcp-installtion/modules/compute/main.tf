@@ -16,4 +16,6 @@ resource "google_compute_instance" "vm_instance" {
     subnetwork = var.subnetwork
     access_config {}
   }
+
+  tags = ["allow-custom-ports"]  # <-- 👈 ADD THIS LINE
 }
